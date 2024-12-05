@@ -20,7 +20,7 @@ export function PropertyInfo() {
       <Button
         variant={'link'}
         className="p-0 font-bold text-base"
-        onClick={() => setShowMore(!showMore)}
+        onClick={(prev) => setShowMore(!prev)}
       >
         {showMore ? 'Hide' : 'See more...'}
       </Button>

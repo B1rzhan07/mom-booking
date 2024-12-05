@@ -39,7 +39,7 @@ export function PropertyServices() {
           variant="outline"
           className="bg-inherit font-semibold border-slate-900"
           size={'lg'}
-          onClick={() => setShowMore(!showMore)}
+          onClick={(prev) => setShowMore(!prev)}
         >
           {showMore ? 'Hide' : 'See more...'}
         </Button>
