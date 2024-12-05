@@ -22,7 +22,7 @@ export function PropertyInfo() {
         className="p-0 font-bold text-base"
         onClick={() => setShowMore(!showMore)}
       >
-        Show more
+        {showMore ? 'Hide' : 'See more...'}
       </Button>
     </div>
   );

@@ -21,7 +21,6 @@ export function PropertyServices() {
       setProperties(showMore ? property.propertyServices : property.propertyServices.slice(0, 4));
     }
   }, [property, showMore]);
-  console.log(properties, 2322);
 
   return (
     <div className=" flex flex-col gap-4">
@@ -42,7 +41,7 @@ export function PropertyServices() {
           size={'lg'}
           onClick={() => setShowMore(!showMore)}
         >
-          Show all facilities
+          {showMore ? 'Hide' : 'See more...'}
         </Button>
       </div>
     </div>
