@@ -21,7 +21,8 @@ export default function Home() {
   console.log(property);
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    getProperties({ cityId, checkIn, checkOut, capacity: guestNumber });
+    const check_out = checkOut as string;
+    getProperties({ cityId, checkIn, checkOut: check_out, capacity: guestNumber });
   };
 
   return (
